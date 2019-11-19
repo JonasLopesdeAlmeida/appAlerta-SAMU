@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivitySegundaTela">
+    >
+    //imvFoto
+
+    <ImageView
+        android:id="@+id/ivImagem"
+        android:layout_width="match_parent"
+        android:layout_height="243dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#9E1105"
+            android:text="Tirar Foto"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnImagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D67E13"
+            android:layout_marginTop="7dp"
+            android:text="Galeria"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtObserv"
+        android:text="Observação:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/edtObservacao"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="#9E1105"
+        android:text="Enviar"
+        android:textColor="#fff" />
+
+</LinearLayout>

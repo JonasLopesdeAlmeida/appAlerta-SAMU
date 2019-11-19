@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityCriarConta">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/ivImagem"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:src="@drawable/form" />-->
+
+        <TextView
+            android:id="@+id/lblNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome*" />
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/lblEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email* " />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/lblSexo"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:ems="10"
+            android:text="Sexo " />
+
+        <EditText
+            android:id="@+id/edtSexo"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/lblFone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefone" />
+
+        <EditText
+            android:id="@+id/edtTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/lblCpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CPF" />
+
+        <EditText
+            android:id="@+id/edtCPF"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:ems="10"
+            android:inputType="text|textCapCharacters" />
+
+        <TextView
+            android:id="@+id/lblsenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Senha*" />
+
+        <EditText
+            android:id="@+id/edtsenha"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEnviar"
+                style="@android:style/Widget.DeviceDefault.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#9E1105"
+                android:onClick="cadastrar"
+                android:text="Criar conta"
+                android:textColor="#fff" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLimpar"
+                style="@android:style/Widget.DeviceDefault.Light.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#D67E13"
+                android:text="Lista"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
