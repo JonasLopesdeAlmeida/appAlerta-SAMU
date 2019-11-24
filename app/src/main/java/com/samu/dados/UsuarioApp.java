@@ -71,13 +71,13 @@ public class UsuarioApp {
 
   @Override
   public String toString() {
-    return "UsuarioApp{" +
+    return
             "nome='" + nome + '\'' +
             ", email='" + email + '\'' +
             ", sexo='" + sexo + '\'' +
             ", telefone='" + telefone + '\'' +
             ", cpf='" + cpf + '\'' +
-            ", senha='" + senha + '\'' +
-            '}';
+            ", senha='" + senha + '\''
+            ;
   }
 }

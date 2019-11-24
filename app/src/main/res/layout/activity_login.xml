@@ -39,7 +39,7 @@
             android:text="Senha" />
 
         <EditText
-            android:id="@+id/edtTelefone"
+            android:id="@+id/edtSenha"
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:ems="10"
@@ -51,12 +51,12 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnFoto"
+                android:id="@+id/btnEntrar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#9E1105"
-                android:onClick="TelaPrincipal"
+                android:onClick="login"
                 android:text="Entrar"
                 android:textColor="#fff" />
 

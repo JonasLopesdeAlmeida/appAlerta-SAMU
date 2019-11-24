@@ -3,28 +3,26 @@ package com.samu;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.samu.Dao.Cadastro;
+import com.samu.Dao.CadastroAlertas;
 
-public class ListaDeCadastro extends AppCompatActivity {
-
+public class ListaDeAlertas extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listadecadastro);
+        setContentView(R.layout.lisradealertas);
 
-        Button btnMostrar = findViewById(R.id.btnMostrar);
-        btnMostrar.setOnClickListener(new View.OnClickListener() {
+        Button btnListaAlerta = findViewById(R.id.btnListaAlerta);
+        btnListaAlerta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ListaDeCadastro.this, MainActivityLogin.class));
+                startActivity(new Intent(ListaDeAlertas.this, MainActivitySegundaTela.class));
 
             }
         });
@@ -35,15 +33,11 @@ public class ListaDeCadastro extends AppCompatActivity {
     protected void onResume(){
         super.onResume();
 
-        ListView lista = findViewById(R.id.edtListaDeCada);
+        ListView lista = findViewById(R.id.edtListaDeAlertas);
 
-        Cadastro dao = new Cadastro();
+        CadastroAlertas dao = new CadastroAlertas();
 
         lista.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dao.todos()));
     }
 
-
 }
-
-
-

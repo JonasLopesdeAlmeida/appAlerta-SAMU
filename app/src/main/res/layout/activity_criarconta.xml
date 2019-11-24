@@ -120,15 +120,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnLimpar"
-                style="@android:style/Widget.DeviceDefault.Light.Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#D67E13"
-                android:text="Lista"
-                android:textColor="#fff"/>
+
         </LinearLayout>
     </LinearLayout>
 

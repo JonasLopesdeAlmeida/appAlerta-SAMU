@@ -15,6 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
     <activity android:name=".MainActivitySegundaTela"/>
+        <activity android:name=".ListaDeAlertas"/>
+        <activity android:name=".ListaDeCadastro"/>
     <activity android:name=".MainActivityCriarConta" />
     <activity android:name=".MainActivityLogin">
         <intent-filter>
